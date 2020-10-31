@@ -13,7 +13,6 @@ import java.util.Scanner;
 public class tebak2 {
     Random rand = new Random();
     Scanner input = new Scanner(System.in);
-    int jumlah = 0;
     int bil = 101;
     int int_random = rand.nextInt(bil);
     int ngisi;
@@ -26,7 +25,6 @@ public class tebak2 {
         while (this.ngisi != this.int_random){
             System.out.print("Masukan Tebakan Anda : ");
             this.ngisi = input.nextInt();
-            this.jumlah = this.jumlah + 1;
             this.score = this.score - 2;
             this.tebakan = this.tebakan + 1;
             if(this.ngisi == this.int_random){
